@@ -1,524 +1,265 @@
-# Aged Care Daily & Weekly Task Management Process Improvement
+# Aged Care Daily & Weekly Task Management
 
-**Project type:** Business Process Improvement
+## Business Analyst Portfolio Project
+
+**Project Type:** Business Process Improvement
 **Industry:** Aged Care
 **Role:** Business Analyst
-**Project:** Portfolio Case Study
+**Project Status:** Portfolio Case Study
 
 ---
 
 ## Project Overview
 
-For this project, I looked at a common operational problem in an aged care environment: how daily and weekly tasks are communicated to care staff and how managers can keep track of whether those tasks have been completed.
+This project looks at how daily and weekly operational tasks can be communicated, assigned and monitored more consistently in an aged care environment.
 
-In a busy care environment, tasks can be communicated verbally or through different informal methods. This can work for simple situations, but it becomes harder to keep track when there are multiple staff members, recurring tasks and competing priorities during a shift.
+The current process relies heavily on manual communication and follow-up. This can make it difficult for staff and clinical leaders to maintain a clear view of outstanding tasks, task ownership and completion status.
 
-I used this scenario to practise the Business Analyst process from identifying the problem through to requirements, process mapping, user stories, acceptance criteria, future-state design and UAT.
+I analysed the current process and designed a proposed future-state workflow focused on improving task visibility, ownership and follow-up.
 
-The solution I have proposed is a structured digital task-management process where staff can see their assigned tasks, update the status and flag tasks that cannot be completed. RNs and Clinical Care Coordinators can then have better visibility of outstanding work.
-
-> **Note:** This is a fictionalised/anonymised portfolio project. It does not use confidential resident, staff or organisational information.
+> **Note:** This is a fictionalised portfolio case study based on a realistic aged care operational scenario. No real resident, employee or confidential organisational information is included.
 
 ---
 
-# 1. The Business Problem
+## Business Problem
 
-The starting point for this project was a simple question:
+The current process can involve:
 
-**How can we make daily and weekly task communication easier to manage and easier to track?**
+* Manual communication of tasks
+* Limited visibility of outstanding work
+* Repeated communication for recurring tasks
+* Manual follow-up by RNs and CCCs
+* No consistent exception process when tasks cannot be completed
 
-Some examples of tasks in an aged care environment could include:
+### Business Impact
 
-* Daily resident-related checks
-* Weekly scheduled activities
-* Resident-of-the-day activities
-* Weight checks
-* Documentation-related tasks
-* Other recurring operational activities
-
-I identified three main problems with the current approach.
-
-### 1. Manual communication
-
-Tasks may need to be communicated verbally or through informal communication between staff.
-
-This creates a risk that information may not reach the right person at the right time.
-
-### 2. Tasks can be missed
-
-Care staff can be dealing with several priorities during a shift. When tasks are communicated manually, there is a possibility that a task may be forgotten, misunderstood or not completed.
-
-### 3. Limited visibility
-
-RNs and Clinical Care Coordinators may need to ask staff directly whether a task has been completed.
-
-There isn't necessarily one place where they can quickly see:
-
-* What has been completed
-* What is still outstanding
-* What is overdue
-* Why a task was not completed
+These issues can create additional coordination work and make it harder to maintain a consistent view of operational tasks.
 
 ---
 
-# 2. Project Objective
+## Stakeholders
 
-The main objective is to improve **communication and visibility of daily and weekly tasks**.
+The main stakeholders considered in the analysis are:
 
-I wanted the future process to make it easier for:
-
-**Care staff** to know what they need to do.
-
-**RNs** to see outstanding tasks and follow up where appropriate.
-
-**Clinical Care Coordinators** to monitor recurring activities and overall task completion.
-
-The proposed process should provide:
-
-* Clear task assignment
-* One central place to view tasks
-* Simple status updates
-* Visibility of outstanding work
-* Visibility of completed work
-* Support for recurring tasks
-* A way to record exceptions
-* Easier follow-up
+* **Care Staff** — complete assigned tasks
+* **Registered Nurses (RNs)** — monitor relevant tasks and follow up
+* **Clinical Care Coordinators (CCCs)** — coordinate and monitor operational tasks
+* **Care Management** — provides operational oversight
+* **IT / Application Support** — supports the technology solution
 
 ---
 
-# 3. Stakeholder Analysis
+# As-Is Process
 
-I identified the following stakeholders based on how they would interact with the process.
+The current-state analysis identified a process that relies heavily on manual communication and follow-up.
 
-| Stakeholder                         | How they use the process                          | What they need                                      | Involvement |
-| ----------------------------------- | ------------------------------------------------- | --------------------------------------------------- | ----------- |
-| **Care Staff**                      | Complete assigned tasks                           | Clear instructions and an easy way to update status | High        |
-| **Registered Nurse (RN)**           | Monitor relevant tasks and follow up              | Visibility of outstanding and overdue tasks         | High        |
-| **Clinical Care Coordinator (CCC)** | Coordinate activities and monitor recurring tasks | Overall visibility and task reporting               | High        |
-| **Administration Staff**            | Support operational activities                    | Less manual coordination                            | Medium      |
-| **IT / Application Support**        | Support the technology                            | Clear requirements and maintainable solution        | Medium      |
-| **Quality / Compliance**            | Monitor process consistency                       | Reliable records and traceability                   | Medium      |
+![As-Is Process Flow](as-is-process.png)
 
-### Stakeholder observation
+### Key Pain Points
 
-The needs of each group are slightly different.
-
-For example, care staff need the process to be **quick and easy to use**, while an RN or CCC needs more **visibility and oversight**.
-
-This is something I would consider when gathering and prioritising requirements.
+* Manual communication
+* Limited task visibility
+* Manual follow-up
+* Repeated communication
 
 ---
 
-# 4. Current-State Process — As-Is
+# Analysis
 
-I mapped the current process before thinking about a technology solution.
+I analysed the current process to understand the underlying causes rather than simply proposing a technology solution.
 
-The basic process is:
+The analysis identified a common root cause:
 
-**Task identified**
+> **There is no consistent central process for managing operational task ownership and status.**
 
-↓
-
-**Task communicated manually**
-
-↓
-
-**Care staff receives instruction**
-
-↓
-
-**Care staff completes task**
-
-↓
-
-**Completion communicated or documented**
-
-↓
-
-**RN / CCC follows up if required**
-
-↓
-
-**Task considered complete**
-
-### Current-State Pain Points
-
-During the analysis, I identified the following areas that could be improved:
-
-* Tasks rely heavily on manual communication
-* There may not be one central task list
-* Staff may have limited visibility of outstanding tasks
-* RNs and CCCs may need to manually follow up
-* Recurring tasks may require repeated communication
-
-**Process diagram:**
-`as-is-process.png`
+The analysis also considered the impact of task visibility, recurring work, overdue tasks and exceptions.
 
 ---
 
-# 5. Business Requirements
+# To-Be Process
 
-After looking at the current process, I translated the problems into business requirements.
+The proposed future-state process introduces clearer task ownership, central task visibility, status tracking and structured exception handling.
 
-### BR-01 — Central Task Visibility
+![To-Be Process Flow](to-be-process.png)
 
-The solution should provide one central location where care staff can view their assigned tasks.
+### Key Improvements
 
-### BR-02 — Task Assignment
-
-The solution should allow tasks to be assigned to the appropriate staff member or team.
-
-### BR-03 — Task Status
-
-Users should be able to see whether a task is:
-
-* Not Started
-* In Progress
-* Completed
-* Overdue
-
-### BR-04 — Recurring Tasks
-
-The solution should support tasks that need to be repeated daily or weekly.
-
-### BR-05 — Clinical Oversight
-
-RNs and CCCs should be able to view relevant outstanding and completed tasks.
-
-### BR-06 — Completion Recording
-
-Care staff should be able to record when a task has been completed.
-
-### BR-07 — Exception Handling
-
-The process should allow staff to identify a task that cannot be completed and provide a reason for follow-up.
+* Central task visibility
+* Clear task ownership
+* Recurring task management
+* Status visibility
+* Structured exception handling
+* Reduced manual follow-up
 
 ---
 
-# 6. User Stories
+# Business Requirements
 
-I converted some of the requirements into user stories to describe what different users need from the solution.
+The key requirements identified include:
 
-### US-01 — View Assigned Tasks
+1. Provide staff with a central view of assigned tasks.
+2. Assign tasks to an appropriate staff member or team.
+3. Provide consistent task statuses.
+4. Support recurring daily and weekly tasks.
+5. Allow authorised RNs and CCCs to monitor relevant tasks.
+6. Allow staff to record task completion.
+7. Provide a structured exception process.
+8. Identify overdue tasks.
+9. Maintain relevant task history.
 
-**As a care staff member, I want to see my assigned tasks in one place so that I know what needs to be completed during my shift.**
+Detailed requirements are documented in:
 
-### US-02 — Complete a Task
-
-**As a care staff member, I want to mark a task as completed so that the appropriate RN or CCC can see the current status.**
-
-### US-03 — Monitor Outstanding Tasks
-
-**As an RN, I want to see outstanding tasks so that I can follow up when required.**
-
-### US-04 — Manage Recurring Tasks
-
-**As a CCC, I want recurring tasks to be generated automatically so that staff do not have to receive the same instructions manually each time.**
-
-### US-05 — Identify Overdue Tasks
-
-**As an RN or CCC, I want to identify overdue tasks so that appropriate follow-up can occur.**
+**[Requirements Document](requirements.md)**
 
 ---
 
-# 7. Acceptance Criteria
+# User Stories
 
-I used acceptance criteria to make the user stories more specific and testable.
+The requirements were translated into user stories for the main user groups.
 
-### AC-01 — Assigned Task Visibility
+Examples include:
 
-**Given** a care staff member has assigned tasks,
+> **As a care staff member, I want to see my assigned tasks in one place so that I know what needs to be completed during my shift.**
 
-**When** they open the task-management system,
+> **As an RN, I want to see outstanding tasks so that I can identify tasks that may need follow-up.**
 
-**Then** their assigned tasks should be displayed,
+> **As a CCC, I want recurring tasks to be generated automatically so that staff do not have to receive the same instructions manually each time.**
 
-**And** the relevant due information should be visible.
+See the complete:
 
-### AC-02 — Task Completion
-
-**Given** a care staff member has an assigned task,
-
-**When** they complete the task,
-
-**Then** they should be able to mark it as completed,
-
-**And** the task status should change to "Completed",
-
-**And** authorised RNs and CCCs should be able to see the updated status.
-
-### AC-03 — Overdue Task
-
-**Given** a task has a defined due time,
-
-**When** the due time passes and the task has not been completed,
-
-**Then** the task should be identified as "Overdue",
-
-**And** authorised RNs and CCCs should be able to see the status.
-
-### AC-04 — Exception
-
-**Given** a care staff member cannot complete an assigned task,
-
-**When** they record an exception,
-
-**Then** the reason should be recorded,
-
-**And** the relevant RN or CCC should be able to review it.
+**[User Stories & Acceptance Criteria](user-stories.md)**
 
 ---
 
-# 8. Requirements Traceability
+# Requirements Traceability
 
-I created a simple Requirements Traceability Matrix to make sure the requirements can be followed through to testing.
+A Requirements Traceability Matrix was created to connect:
 
-| Requirement | User Story | Acceptance Criteria | UAT             |
-| ----------- | ---------- | ------------------- | --------------- |
-| BR-01       | US-01      | AC-01               | UAT-01          |
-| BR-02       | US-01      | AC-01               | UAT-02          |
-| BR-03       | US-02      | AC-02               | UAT-03          |
-| BR-04       | US-04      | AC-04               | UAT-04          |
-| BR-05       | US-03      | AC-03               | UAT-05          |
-| BR-05       | US-05      | AC-03               | UAT-06          |
-| BR-06       | US-02      | AC-02               | UAT-03          |
-| BR-07       | US-05      | AC-03 / AC-04       | UAT-07 / UAT-08 |
+**Business Requirement → User Story → Acceptance Criteria → UAT**
 
-The purpose of the RTM is to make sure that a requirement doesn't get lost between analysis and testing.
+This helps ensure that requirements can be followed through to testing.
+
+**[View Requirements Traceability Matrix](requirements-traceability-matrix.md)**
 
 ---
 
-# 9. Future-State Process — To-Be
+# UAT
 
-After analysing the current process, I designed a possible future-state workflow.
+The proposed solution includes business-focused UAT scenarios covering:
 
-The proposed process would work like this:
+* Viewing assigned tasks
+* Task assignment
+* Task completion
+* Recurring tasks
+* Outstanding task monitoring
+* Overdue tasks
+* Exception recording
+* Exception review
+* Task history
 
-**Recurring task becomes due / New task created**
-
-↓
-
-**System creates the task**
-
-↓
-
-**Task is assigned to the appropriate staff/team**
-
-↓
-
-**Care staff receives the task**
-
-↓
-
-**Care staff views the task and due time**
-
-↓
-
-**Can the task be completed?**
-
-### If YES
-
-**Care staff completes the task**
-
-↓
-
-**Task status is updated**
-
-↓
-
-**RN / CCC can view the updated status**
-
-### If NO
-
-**Staff records an exception/reason**
-
-↓
-
-**RN / CCC reviews the exception**
-
-↓
-
-**Appropriate follow-up action**
-
-↓
-
-**Task status is updated**
-
-**To-Be process diagram:**
-`to-be-process.png`
+**[View UAT Test Plan](uat-test-plan.md)**
 
 ---
 
-# 10. Why I Included Exception Handling
+# Stakeholder Analysis
 
-One thing I wanted to avoid in this project was designing an unrealistic "perfect" automated process.
+The project includes stakeholder identification, stakeholder needs, Power/Interest analysis and a RACI matrix.
 
-In an actual aged care environment, staff availability and priorities can change during a shift.
-
-For example, a staff member may:
-
-* Become unavailable
-* Be reassigned
-* Have an urgent competing task
-* Need clarification
-* Be unable to complete a task for an operational reason
-
-Because of this, I included an exception path in the future-state process.
-
-Instead of simply marking the task as failed, the staff member can record what happened and the RN or CCC can review it.
-
-This keeps the automation focused on **supporting the workflow**, rather than trying to replace human judgement.
+**[View Stakeholder Analysis & RACI](stakeholder-analysis.md)**
 
 ---
 
-# 11. Automation Concept
+# Problem & Root Cause Analysis
 
-One possible solution would be to use a digital task-management workflow.
+The analysis used:
 
-For example, a recurring task could work like this:
+* Problem analysis
+* Business impact analysis
+* Root cause analysis
+* Five Whys
+* Improvement opportunity analysis
 
-**Scheduled date/time reached**
-
-↓
-
-**System creates the task**
-
-↓
-
-**Task assigned**
-
-↓
-
-**Staff receives notification**
-
-↓
-
-**Staff completes the task**
-
-↓
-
-**Completion recorded**
-
-↓
-
-**RN / CCC can view the status**
-
-This could reduce repetitive communication and give the team better visibility.
-
-I have intentionally kept the technology solution flexible at this stage. The business requirements should be understood first before deciding whether the final solution should use Microsoft tools, an existing aged-care system, or another platform.
+**[View Problem Analysis](problem-analysis.md)**
 
 ---
 
-# 12. User Acceptance Testing
+# BA Deliverables
 
-I created the following UAT scenarios to check whether the proposed process meets the business requirements.
-
-| Test ID | Scenario                                  | Expected Result                                 | Priority |
-| ------- | ----------------------------------------- | ----------------------------------------------- | -------- |
-| UAT-01  | Care staff views assigned tasks           | Assigned tasks are displayed                    | High     |
-| UAT-02  | New task is assigned                      | Correct staff/team receives the task            | High     |
-| UAT-03  | Care staff completes a task               | Status changes to Completed                     | High     |
-| UAT-04  | Recurring task reaches its scheduled date | New task is generated                           | High     |
-| UAT-05  | RN views task dashboard                   | Relevant outstanding tasks are displayed        | High     |
-| UAT-06  | CCC reviews task status                   | Relevant task status is displayed               | High     |
-| UAT-07  | Task passes its due time                  | Task is identified as Overdue                   | High     |
-| UAT-08  | RN/CCC reviews overdue task               | Follow-up information is available              | High     |
-| UAT-09  | Staff cannot complete a task              | Exception can be recorded                       | High     |
-| UAT-10  | RN/CCC reviews an exception               | Exception and follow-up information are visible | High     |
-
-These are **proposed UAT scenarios** for the portfolio case study. They are not claims that I tested a live production system.
+| Deliverable          | Purpose                                           |
+| -------------------- | ------------------------------------------------- |
+| As-Is Process        | Understand current workflow                       |
+| To-Be Process        | Design improved future state                      |
+| Problem Analysis     | Identify root causes and impacts                  |
+| Requirements         | Define business and system needs                  |
+| User Stories         | Translate requirements into user needs            |
+| RTM                  | Maintain requirement traceability                 |
+| UAT Plan             | Validate proposed requirements                    |
+| Stakeholder Analysis | Understand stakeholder needs and responsibilities |
 
 ---
 
-# 13. Expected Business Benefits
+# Key BA Skills Demonstrated
 
-If implemented successfully, I would expect the improved process to provide several benefits.
+This project demonstrates practical experience with:
 
-### Better communication
-
-Staff would have a central place to see what needs to be completed.
-
-### Better visibility
-
-RNs and CCCs could see outstanding, completed and overdue tasks more easily.
-
-### Less manual follow-up
-
-The team would not need to rely entirely on verbal communication to find out whether routine tasks were completed.
-
-### Better accountability
-
-Task ownership and completion status would be recorded.
-
-### Easier management of recurring tasks
-
-Daily and weekly activities could be generated according to defined rules.
-
-### Better handling of exceptions
-
-Tasks that cannot be completed would be visible rather than simply disappearing from the workflow.
-
----
-
-# 14. BA Skills Demonstrated
-
-Through this project I practised:
-
-* Stakeholder analysis
 * Business problem analysis
-* As-Is process mapping
-* To-Be process design
-* Requirements gathering
-* Business requirements
+* Process mapping
+* As-Is / To-Be analysis
+* Requirements elicitation
+* Functional requirements
+* Non-functional requirements
+* Business rules
 * User stories
 * Acceptance criteria
 * Requirements traceability
-* Exception analysis
-* Process improvement
-* Automation analysis
 * UAT planning
-* Business benefits analysis
+* Stakeholder analysis
+* RACI
+* Root cause analysis
+* Five Whys
+* Process improvement
+* Exception handling
 
 ---
 
-# 15. Tools
+# Expected Business Benefits
 
-Tools considered for this type of solution and analysis include:
+If implemented successfully, the proposed process could help improve:
 
-* Microsoft Excel
-* Microsoft Power BI
-* Microsoft Power Automate
-* Microsoft Lists / SharePoint
-* Jira
-* GitHub
-* Process mapping tools
+**Visibility**
+Staff and clinical leaders have a clearer view of task status.
 
-The tools are secondary to the requirements. My approach was to first understand the business problem and process, then consider which technology could support the improved process.
+**Communication**
+Less reliance on repeated manual communication.
 
----
+**Accountability**
+Task ownership becomes clearer.
 
-# 16. What I Learned From This Project
+**Follow-Up**
+Outstanding, overdue and exception tasks are easier to identify.
 
-The main lesson from this project was that automation should not be the starting point of a Business Analysis project.
-
-The starting point should be understanding:
-
-**What is the problem?**
-
-**Who is affected?**
-
-**Why is the current process not working well?**
-
-**What does the business actually need?**
-
-Only after answering those questions does it make sense to consider automation or a particular technology.
-
-This project helped me practise turning an operational problem into structured requirements and then linking those requirements through to UAT.
+**Consistency**
+Recurring tasks can follow a standard process.
 
 ---
 
-## Portfolio Disclaimer
+# Project Reflection
 
-This is a fictionalised/anonymised portfolio case study created to demonstrate my Business Analysis approach.
+This project helped me understand that Business Analysis is not simply about documenting requirements.
 
-No confidential resident, employee, organisational or proprietary information has been included.
+The important part is understanding the problem first, identifying the people affected by it, analysing the current process and then designing a future state that addresses the underlying issues.
+
+The proposed solution is intentionally technology-neutral at this stage. In a real project, I would validate the requirements with stakeholders and assess potential technology options before recommending a specific solution.
+
+---
+
+## Project Files
+
+* [Requirements](requirements.md)
+* [User Stories & Acceptance Criteria](user-stories.md)
+* [Requirements Traceability Matrix](requirements-traceability-matrix.md)
+* [UAT Test Plan](uat-test-plan.md)
+* [Problem & Root Cause Analysis](problem-analysis.md)
+* [Stakeholder Analysis & RACI](stakeholder-analysis.md)
+* [As-Is Process Diagram](as-is-process.png)
+* [To-Be Process Diagram](to-be-process.png)

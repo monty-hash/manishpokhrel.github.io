@@ -6,6 +6,8 @@
 
     <title>Manish Pokhrel | Business Analyst Portfolio</title>
 
+    <meta name="description" content="Manish Pokhrel's Business Analyst portfolio showcasing business process improvement, requirements analysis, ERP, UAT and automation projects.">
+
     <style>
         * {
             box-sizing: border-box;
@@ -44,6 +46,7 @@
             border-bottom: 1px solid #e5e7eb;
             position: sticky;
             top: 0;
+            z-index: 100;
         }
 
         nav a {
@@ -78,6 +81,17 @@
             max-width: 850px;
         }
 
+        .highlight {
+            background: white;
+            padding: 25px;
+            margin-top: 25px;
+            border-left: 4px solid #2563eb;
+            border-radius: 8px;
+            border-top: 1px solid #e5e7eb;
+            border-right: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
         .skills {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -89,6 +103,12 @@
             padding: 20px;
             border-radius: 10px;
             border: 1px solid #e5e7eb;
+        }
+
+        .skill strong {
+            display: block;
+            margin-bottom: 8px;
+            color: #111827;
         }
 
         .projects {
@@ -119,11 +139,34 @@
             font-weight: bold;
         }
 
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        .featured {
+            border: 2px solid #2563eb;
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 13px;
+            font-weight: bold;
+            background: #eef2ff;
+            color: #1d4ed8;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
         .contact {
             background: white;
             padding: 30px;
             border-radius: 10px;
             border: 1px solid #e5e7eb;
+        }
+
+        .contact a {
+            color: #2563eb;
         }
 
         footer {
@@ -148,187 +191,248 @@
 
 <body>
 
-    <header>
-        <h1>Manish Pokhrel</h1>
-        <p>Business Analyst | ERP & Process Improvement | Automation</p>
-    </header>
+<header>
+    <h1>Manish Pokhrel</h1>
+    <p>Business Analyst | ERP & Process Improvement | Automation</p>
+</header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-    <main class="container">
+<main class="container">
 
-        <section id="about">
-            <h2>About Me</h2>
+    <section id="about">
+        <h2>About Me</h2>
 
-            <p class="intro">
-                I am an aspiring Business Analyst with a background in ICT,
-                enterprise resource planning, and aged care operations.
-                I am developing practical skills in business analysis,
-                process improvement, ERP systems, data analysis, and
-                automation.
+        <p class="intro">
+            I am an aspiring Business Analyst with a background in ICT,
+            enterprise resource planning and aged care operations.
+            I am building practical experience in business analysis,
+            process improvement, ERP systems, data analysis and automation.
+        </p>
+
+        <div class="highlight">
+            <strong>My approach:</strong>
+            I start by understanding the business problem and current
+            process, then analyse requirements, stakeholders and
+            improvement opportunities before designing a proposed solution.
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <h2>Business Analysis Skills</h2>
+
+        <div class="skills">
+
+            <div class="skill">
+                <strong>Requirements Analysis</strong>
+                <p>
+                    Business requirements, functional requirements,
+                    non-functional requirements and user stories.
+                </p>
+            </div>
+
+            <div class="skill">
+                <strong>Process Improvement</strong>
+                <p>
+                    As-Is analysis, process mapping, root cause analysis
+                    and To-Be process design.
+                </p>
+            </div>
+
+            <div class="skill">
+                <strong>ERP / SAP</strong>
+                <p>
+                    ERP concepts, business processes and SAP
+                    workflow analysis.
+                </p>
+            </div>
+
+            <div class="skill">
+                <strong>UAT</strong>
+                <p>
+                    Acceptance criteria, test scenarios,
+                    traceability and user acceptance testing.
+                </p>
+            </div>
+
+            <div class="skill">
+                <strong>Data Analysis</strong>
+                <p>
+                    Excel, SQL, Power BI and data-driven
+                    business analysis.
+                </p>
+            </div>
+
+            <div class="skill">
+                <strong>Automation</strong>
+                <p>
+                    Identifying repetitive processes and designing
+                    practical workflow improvements.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+
+        <div class="projects">
+
+            <div class="project featured">
+
+                <span class="badge">Business Analyst Case Study</span>
+
+                <h3>
+                    Aged Care Daily & Weekly Task Management
+                </h3>
+
+                <p>
+                    A business process improvement case study analysing
+                    manual task communication and proposing a more
+                    structured approach to task ownership, visibility,
+                    status tracking and follow-up.
+                </p>
+
+                <p>
+                    <strong>Key BA work:</strong>
+                    As-Is / To-Be process mapping, root cause analysis,
+                    requirements, user stories, acceptance criteria,
+                    stakeholder analysis, RACI, RTM and UAT.
+                </p>
+
+                <a href="projects/aged-care-task-management/">
+                    View Project →
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="badge">Coming Soon</span>
+
+                <h3>
+                    Project 02 — ERP / SAP Process Analysis
+                </h3>
+
+                <p>
+                    An ERP-focused business analysis project demonstrating
+                    enterprise process understanding, requirements gathering
+                    and SAP workflow analysis.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
+
+
+            <div class="project">
+
+                <span class="badge">Coming Soon</span>
+
+                <h3>
+                    Project 03 — Automation & Workflow Improvement
+                </h3>
+
+                <p>
+                    A process improvement project focused on identifying
+                    repetitive work and designing a practical automation
+                    approach.
+                </p>
+
+                <a href="#">
+                    Coming Soon
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="education">
+
+        <h2>Education & Professional Development</h2>
+
+        <p>
+            <strong>
+                Master of Enterprise Resource Planning Systems
+            </strong>
+        </p>
+
+        <p>
+            Victoria University
+        </p>
+
+        <br>
+
+        <p>
+            <strong>
+                Business Analysis & Technology Development
+            </strong>
+        </p>
+
+        <p>
+            Currently developing practical skills in Business Analysis,
+            SAP/ERP, SQL, Power BI, Excel, Python and AI Automation.
+        </p>
+
+    </section>
+
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <div class="contact">
+
+            <p>
+                I am interested in Business Analyst, ERP,
+                Application Support and Process Improvement opportunities.
             </p>
 
             <br>
 
-            <p class="intro">
-                My portfolio focuses on solving real-world business problems
-                through requirements analysis, process mapping, ERP solutions,
-                automation, reporting, and continuous improvement.
-            </p>
-        </section>
-
-
-        <section id="skills">
-            <h2>Business Analysis Skills</h2>
-
-            <div class="skills">
-
-                <div class="skill">
-                    <strong>Requirements Analysis</strong>
-                    <p>Business requirements, functional requirements and user stories.</p>
-                </div>
-
-                <div class="skill">
-                    <strong>Process Improvement</strong>
-                    <p>Current-state analysis, process mapping and future-state design.</p>
-                </div>
-
-                <div class="skill">
-                    <strong>ERP / SAP</strong>
-                    <p>Enterprise processes, ERP concepts and SAP business workflows.</p>
-                </div>
-
-                <div class="skill">
-                    <strong>UAT</strong>
-                    <p>Test scenarios, acceptance criteria and user acceptance testing.</p>
-                </div>
-
-                <div class="skill">
-                    <strong>Data Analysis</strong>
-                    <p>Excel, SQL, Power BI and data-driven business insights.</p>
-                </div>
-
-                <div class="skill">
-                    <strong>Automation</strong>
-                    <p>Identifying repetitive processes and designing automation solutions.</p>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="projects">
-            <h2>Featured Projects</h2>
-
-            <div class="projects">
-
-                <div class="project">
-                    <h3>Project 01 — Coming Soon</h3>
-
-                    <p>
-                        Business process improvement project demonstrating
-                        requirements analysis, process mapping and solution design.
-                    </p>
-
-                    <a href="#">View Project</a>
-                </div>
-
-
-                <div class="project">
-                    <h3>Project 02 — Coming Soon</h3>
-
-                    <p>
-                        ERP/SAP business process analysis project demonstrating
-                        enterprise process understanding and requirements gathering.
-                    </p>
-
-                    <a href="#">View Project</a>
-                </div>
-
-
-                <div class="project">
-                    <h3>Project 03 — Coming Soon</h3>
-
-                    <p>
-                        Automation and workflow improvement project demonstrating
-                        business analysis and technology-driven process improvement.
-                    </p>
-
-                    <a href="#">View Project</a>
-                </div>
-
-            </div>
-        </section>
-
-
-        <section id="education">
-            <h2>Education & Professional Development</h2>
-
             <p>
-                <strong>Master of Enterprise Resource Planning Systems</strong>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/monty-hash">
+                    github.com/monty-hash
+                </a>
             </p>
 
             <p>
-                Victoria University
-            </p>
-
-            <br>
-
-            <p>
-                <strong>Business Analysis & Technology Development</strong>
+                <strong>LinkedIn:</strong>
+                Add LinkedIn profile
             </p>
 
             <p>
-                Currently developing practical skills in Business Analysis,
-                SAP/ERP, SQL, Power BI, Excel, Python and AI Automation.
+                <strong>Email:</strong>
+                Add professional email
             </p>
-        </section>
+
+        </div>
+
+    </section>
+
+</main>
 
 
-        <section id="contact">
-            <h2>Contact</h2>
-
-            <div class="contact">
-
-                <p>
-                    I am interested in Business Analyst, ERP, Application
-                    Support and Process Improvement opportunities.
-                </p>
-
-                <br>
-
-                <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/monty-hash">
-                        github.com/monty-hash
-                    </a>
-                </p>
-
-                <p>
-                    <strong>LinkedIn:</strong>
-                    Add LinkedIn profile
-                </p>
-
-                <p>
-                    <strong>Email:</strong>
-                    Add professional email
-                </p>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>© 2026 Manish Pokhrel | Business Analyst Portfolio</p>
-    </footer>
+<footer>
+    <p>
+        © 2026 Manish Pokhrel | Business Analyst Portfolio
+    </p>
+</footer>
 
 </body>
 </html>
